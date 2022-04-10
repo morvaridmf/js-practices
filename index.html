@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div action="">
+        <fieldset>
+          <legend>Contact Form</legend>
+
+          <label for="firstname" class="label">FirstName : </label>
+          <input type="text" name="firstname" id="fname" />
+          <div id="error-firstname"></div>
+
+          <label for="lastname" class="label">LastName : </label>
+          <input type="text" name="lastname" class="lname" />
+          <div id="error-lastname"></div>
+
+          <label for="phone" class="label">Phone Number : </label>
+          <input type="number" name="phone" id="phone" />
+          <div id="error-phone"></div>
+
+          <label for="email" class="label">Email : </label>
+          <input type="email" name="email" id="email" />
+          <div id="error-email"></div>
+
+          <label for="password" class="label">Password : </label>
+          <input type="password" name="password" id="password" />
+
+          <div class="radio">
+            <label for="gender" class="label">Gender : </label>
+            <input type="radio" name="gender" value="Male" id="radio2" />
+            <label for="gender" class="label">Male </label>
+            <input type="radio" name="gender" value="Female" id="radio3" />
+            <label for="gender" class="label">Female </label>
+          </div>
+
+          <div class="check">
+            <label for="skill" class="label">Skills : </label>
+            <input type="checkbox" name="skill" value="HTML" />
+            <label for="skill" class="label">HTML </label>
+            <input type="checkbox" name="skill" value="CSS" />
+            <label for="skill" class="label">CSS </label>
+            <input type="checkbox" name="skill" value="JavaScript" />
+            <label for="skill" class="label">JavaScript </label>
+            <input type="checkbox" name="skill" value="React" />
+            <label for="skill" class="label">React </label><br /><br />
+          </div>
+
+          <div class="check2">
+            <input type="checkbox" name="terms" />
+            <label for="terms" class="label"
+              >Agree with all the terms and conditions </label
+            ><br /><br />
+          </div>
+
+          <div class="select">
+            <select name="selector" id="selector">
+              <option value="student">student</option>
+              <option value="teacher">teacher</option>
+            </select>
+          </div>
+          <br />
+
+          <button id="submit">SignUp</button>
+        </fieldset>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
