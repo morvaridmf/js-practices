@@ -11,17 +11,6 @@ const checklist = document.querySelectorAll('input[type="checkbox"]');
 let label = document.getElementsByClassName("label");
 const submit = document.querySelector("#submit");
 
-// firstName.style.backgroundColor = "red";
-// lastName.style.borderRadius = "50%";
-
-// console.log(document.getElementById("fname").name);
-
-// document.getElementsByName("h2").textContent = "salam khubi?";
-
-// let x = document.createElement("h3");
-// x.innerText = "man khubam";
-// document.body.appendChild(x);
-
 //------------ submit validation-----------------------------
 
 submit.addEventListener("click", () => {
@@ -67,7 +56,7 @@ submit.addEventListener("click", () => {
     }
   }
   if (radioSelect) {
-    alert(radioSelect);
+    console.log(radioSelect);
   } else {
     alert("you didnt chose your gender");
   }
@@ -79,17 +68,17 @@ submit.addEventListener("click", () => {
   //   }
   // }
 
-  // for (let i = 0; i < checklist.length; i++) {
-  //   if (checklist[i].checked == true) {
-  //     console.log(checklist[i].value);
-  //   }
-  // }
-
-  let checkSelect = [];
-  for (let checkbox of checklist) {
-    if (checkbox.checked) {
-      checkSelect.push(checkbox.value);
+  for (let i = 0; i < checklist.length; i++) {
+    if (checklist[i].checked == true) {
+      console.log(checklist[i].value);
     }
   }
-  console.log(checkSelect);
+
+  // let checkSelect = [];
+  // for (let checkbox of checklist) {
+  //   if (checkbox.checked) {
+  //     checkSelect.push(checkbox.value);
+  //   }
+  // }
+  // console.log(checkSelect);
 });
