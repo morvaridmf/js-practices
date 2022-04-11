@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div action="" method="">
+        <fieldset>
+          <legend>BMI Calculator</legend>
+
+          <div>
+            <label for="age" class="label">Age </label>
+            <input type="number" name="age" id="age" /> ages: 2-120
+          </div>
+
+          <div>
+            <label for="height" class="label">Height </label>
+            <input type="number" name="height" id="height" placeholder="cm" />
+          </div>
+
+          <div>
+            <label for="weight" class="label">Weight </label>
+            <input type="number" name="wieght" id="weight" placeholder="kg" />
+          </div>
+
+          <div class="gender">
+            <label for="gender" class="label">Gender : </label>
+            <input type="radio" name="gender" value="Male" id="male" />
+            <label for="gender" class="label">Male </label>
+            <input type="radio" name="gender" value="Female" id="female" />
+            <label for="gender" class="label">Female </label>
+          </div>
+
+          <div>
+            <button id="calculate" type="submit">Calculate</button>
+            <button id="reset" type="reset">Clear</button>
+          </div>
+          <div class="print"></div>
+        </fieldset>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
