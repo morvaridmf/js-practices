@@ -4,7 +4,7 @@ function Footer(){
      <footer>
     <span>
       <p className="copy">
-        &COPY; Copyright 2018 World Wide Marketing, Copyright Registration.
+        &copy; Copyright 2018 World Wide Marketing, Copyright Registration.
       </p>
     </span>
   </footer>

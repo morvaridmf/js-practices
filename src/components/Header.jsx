@@ -3,9 +3,10 @@ function Header(){
         
     <header>
      <div className="title">
-      <a href="{}">Women</a>
-      <a href="{}">Men</a>
-      <a href="{}">Children</a>
+ 
+      <a href={""}>Women</a>
+      <a href={""}>Men</a>
+      <a href={""}>Children</a>
     </div>
     <div className="logo">
       <h1>Online-Shopping</h1>
@@ -13,7 +14,8 @@ function Header(){
     <div className="search">
       <input type="text" value="search" id="search" placeholder="Search" />
       <button class="btn" type="submit">Search</button>
-    </div> 
+<i class="fa-solid fa-cart-shopping"></i>    
+</div> 
   </header>
 
 
