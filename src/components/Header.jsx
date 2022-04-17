@@ -1,4 +1,12 @@
-function Header(){
+import{useState} from "react"
+
+
+function Header(props){
+  const[selected,setSelected]=useState(true)
+  const signed=()=>{
+   setSelected(!selected)
+   props.setLike()
+  }
     return(
         
     <header>
@@ -14,7 +22,9 @@ function Header(){
     <div className="search">
       <input type="text" value="search" id="search" placeholder="Search" />
       <button class="btn" type="submit">Search</button>
-<i class="fa-solid fa-cart-shopping"></i>    
+<i class="fa-solid fa-cart-shopping"></i>   
+<span className="quantityT" >{props.qt}</span> 
+<button className={`sign-in ${selected ? "" : "sign-out"}`} onClick={signed}>{selected ? "Sign In" : "Sign Out" }</button>
 </div> 
   </header>
 

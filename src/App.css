@@ -115,3 +115,52 @@ footer {
 
 padding-top:35px;
 padding-left: 400px;}
+
+.old-price{
+    text-decoration: line-through;
+    
+}
+
+.new-price {
+    font-size: 20px;
+    font-weight:bolder;}
+    
+ .price{
+    font-size: 20px;
+    font-weight:bolder;
+ }
+
+ .quantity{
+     width: 30px;
+     padding-left: 10px;
+     margin-left: 10px;
+ }
+
+ .border-style{
+     zoom: 105%;
+ }
+ .quantityT{
+     display: inline-block;
+     background-color: rgb(235, 235, 233);
+     color: #10182f;
+padding: 5px;
+margin-left: 5px;
+ }
+ .sign-in{
+     margin-left: 10px;
+     
+ }
+
+ .sign-out{
+     background-color: green;
+     color: white;
+ }
+
+ .HEART{
+     margin-left: 170px;
+ }
+ .HEART1{
+display: none; }
+.HEART2{
+    color: red;
+}

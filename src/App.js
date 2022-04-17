@@ -1,4 +1,5 @@
 import "./App.css";
+import { useState } from "react";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Card from "./components/Card";
@@ -67,22 +68,35 @@ const productsOld = [
 ];
 
 function App() {
+  const [quantityTotal, setQuantityTotal] = useState(0);
+  const [likeStatus, setLikeStatus] = useState(false);
+  const calculateQuantity = () => {
+    setQuantityTotal(quantityTotal + 1);
+  };
+  const likeButton = () => {
+    setLikeStatus(!likeStatus);
+  };
   return (
     <div className="App">
-      <Header />
+      <Header qt={quantityTotal} setLike={likeButton} />
 
       <section className="cards">
-        {" "}
         {products.map((item) => (
-          <Card image={item.image} title={item.title} price={item.price} />
+          <Card
+            setQt={calculateQuantity}
+            likeB={likeStatus}
+            image={item.image}
+            title={item.title}
+            price={item.price}
+          />
         ))}
       </section>
       <br></br>
       <h1 className="sale">Items in sale </h1>
       <section className="cards-old">
-        {" "}
         {productsOld.map((item) => (
           <CardOld
+            setQt={calculateQuantity}
             image={item.image}
             title={item.title}
             newprice={item.newprice}
